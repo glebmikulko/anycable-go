@@ -19,7 +19,7 @@ const (
 
 	writeWait      = 10 * time.Second
 	maxMessageSize = 65536 // 64KB
-	pingInterval   = 3 * time.Second
+	pingInterval   = 3000 * time.Second
 )
 
 // Session represents active client
