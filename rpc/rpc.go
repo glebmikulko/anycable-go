@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/anycable/anycable-go/config"
-	"github.com/anycable/anycable-go/metrics"
-	"github.com/anycable/anycable-go/node"
+	"github.com/glebmikulko/anycable-go/config"
+	"github.com/glebmikulko/anycable-go/metrics"
+	"github.com/glebmikulko/anycable-go/node"
 	"github.com/apex/log"
 
-	grpcpool "github.com/anycable/anycable-go/pool"
-	pb "github.com/anycable/anycable-go/protos"
+	grpcpool "github.com/glebmikulko/anycable-go/pool"
+	pb "github.com/glebmikulko/anycable-go/protos"
 	"google.golang.org/grpc"
 )
 

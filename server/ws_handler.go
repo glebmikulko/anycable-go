@@ -3,7 +3,7 @@ package server
 import (
 	"net/http"
 
-	"github.com/anycable/anycable-go/node"
+	"github.com/glebmikulko/anycable-go/node"
 	"github.com/apex/log"
 	"github.com/gorilla/websocket"
 )

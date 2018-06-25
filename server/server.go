@@ -8,10 +8,10 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/anycable/anycable-go/node"
+	"github.com/glebmikulko/anycable-go/node"
 	"github.com/apex/log"
 
-	"github.com/anycable/anycable-go/config"
+	"github.com/glebmikulko/anycable-go/config"
 )
 
 // HTTPServer is wrapper over http.Server

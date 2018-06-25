@@ -32,7 +32,7 @@ build-linux:
 
 build-all-mruby:
 	env CGO_ENABLED=1 go build -ldflags "-s -w -X main.version=$(VERSION)" -o "dist/anycable-go-$(VERSION)-mrb-macos-amd64" cmd/anycable-go/main.go
-	docker run --rm -v $(PWD):/go/src/github.com/anycable/anycable-go -w /go/src/github.com/anycable/anycable-go -e OUTPUT="dist/anycable-go-$(VERSION)-mrb-linux-amd64" amd64/golang:1.10 make build
+	docker run --rm -v $(PWD):/go/src/github.com/glebmikulko/anycable-go -w /go/src/github.com/glebmikulko/anycable-go -e OUTPUT="dist/anycable-go-$(VERSION)-mrb-linux-amd64" amd64/golang:1.10 make build
 
 build-all:
 	rm -rf ./dist
@@ -58,11 +58,11 @@ downloads-md:
 release: build-all s3-deploy dockerize
 
 docker-release: dockerize
-	docker push "anycable/anycable-go:$(VERSION)"
+	docker push "glebmikulko/anycable-go:$(VERSION)"
 
 dockerize:
 	CGO_ENABLED=0 GOOS=linux go build -ldflags "-X main.version=$(VERSION)" -a -installsuffix cgo -o .docker/anycable-go cmd/anycable-go/main.go
-	docker build -t "anycable/anycable-go:$(VERSION)" .
+	docker build -t "glebmikulko/anycable-go:$(VERSION)" .
 
 # Run server
 run:
@@ -72,16 +72,16 @@ build-protos:
 	protoc --proto_path=./etc --go_out=plugins=grpc:./protos ./etc/rpc.proto
 
 test:
-	go test github.com/anycable/anycable-go/cli \
-		github.com/anycable/anycable-go/config \
-		github.com/anycable/anycable-go/node \
-		github.com/anycable/anycable-go/pool \
-		github.com/anycable/anycable-go/pubsub \
-		github.com/anycable/anycable-go/rpc \
-		github.com/anycable/anycable-go/server \
-		github.com/anycable/anycable-go/metrics \
-		github.com/anycable/anycable-go/mrb \
-		github.com/anycable/anycable-go/utils
+	go test github.com/glebmikulko/anycable-go/cli \
+		github.com/glebmikulko/anycable-go/config \
+		github.com/glebmikulko/anycable-go/node \
+		github.com/glebmikulko/anycable-go/pool \
+		github.com/glebmikulko/anycable-go/pubsub \
+		github.com/glebmikulko/anycable-go/rpc \
+		github.com/glebmikulko/anycable-go/server \
+		github.com/glebmikulko/anycable-go/metrics \
+		github.com/glebmikulko/anycable-go/mrb \
+		github.com/glebmikulko/anycable-go/utils
 
 test-cable:
 	go build -o tmp/anycable-go-test cmd/anycable-go/main.go

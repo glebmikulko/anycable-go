@@ -1,36 +1,36 @@
-[![Build Status](https://travis-ci.org/anycable/anycable-go.svg?branch=master)](https://travis-ci.org/anycable/anycable-go) [![Dependency Status](https://dependencyci.com/github/anycable/anycable-go/badge)](https://dependencyci.com/github/anycable/anycable-go) [![Gitter](https://img.shields.io/badge/gitter-join%20chat%20%E2%86%92-brightgreen.svg)](https://gitter.im/anycable/anycable-go)
+[![Build Status](https://travis-ci.org/glebmikulko/anycable-go.svg?branch=master)](https://travis-ci.org/glebmikulko/anycable-go) [![Dependency Status](https://dependencyci.com/github/glebmikulko/anycable-go/badge)](https://dependencyci.com/github/glebmikulko/anycable-go) [![Gitter](https://img.shields.io/badge/gitter-join%20chat%20%E2%86%92-brightgreen.svg)](https://gitter.im/glebmikulko/anycable-go)
 
 # AnyCable-Go WebSocket Server
 
 WebSocket server for [AnyCable](https://github.com/anycable/anycable).
 
-**NOTE:** this is a readme for the upcoming 0.6.0 version. [Go to 0.5.x version](https://github.com/anycable/anycable-go/tree/0-5-stable).
+**NOTE:** this is a readme for the upcoming 0.6.0 version. [Go to 0.5.x version](https://github.com/glebmikulko/anycable-go/tree/0-5-stable).
 
 ## Installation
 
-The easiest way to install AnyCable-Go is to [download](https://github.com/anycable/anycable-go/releases) a pre-compiled binary.
+The easiest way to install AnyCable-Go is to [download](https://github.com/glebmikulko/anycable-go/releases) a pre-compiled binary.
 
 Or with [Homebrew](https://brew.sh/)
 
 ```shell
-brew install anycable/anycable/anycable-go
+brew install anycable/glebmikulko/anycable-go
 ```
 
 Of course, you can install it from source too:
 
 ```shell
-CGO_ENABLED=0 go get -u -f github.com/anycable/anycable-go/cmd/anycable-go
+CGO_ENABLED=0 go get -u -f github.com/glebmikulko/anycable-go/cmd/anycable-go
 ```
 
 **NOTE:** right now it's not possible to build `anycable-go` with mruby support using the command above (that's why we added `CGO_ENABLED=0`). To install `anycable-go` with mruby from source try:
 
 ```
-go get -d -u -f github.com/anycable/anycable-go/cmd/anycable-go && (cd $GOPATH/src/github.com/anycable/anycable-go && make prepare-mruby install)
+go get -d -u -f github.com/glebmikulko/anycable-go/cmd/anycable-go && (cd $GOPATH/src/github.com/glebmikulko/anycable-go && make prepare-mruby install)
 ```
 
 ## Upgrade
 
-For instructions on how to upgrade to a newer version see [upgrade notes](https://github.com/anycable/anycable-go/blob/master/UPGRADE.md).
+For instructions on how to upgrade to a newer version see [upgrade notes](https://github.com/glebmikulko/anycable-go/blob/master/UPGRADE.md).
 
 ### Heroku
 
@@ -155,7 +155,7 @@ make
 
 ## Docker
 
-See available images [here](https://hub.docker.com/r/anycable/anycable-go/).
+See available images [here](https://hub.docker.com/r/glebmikulko/anycable-go/).
 
 ## ActionCable Compatibility
 
@@ -177,7 +177,7 @@ Remote disconnect | - (WIP)
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/anycable/anycable-go.
+Bug reports and pull requests are welcome on GitHub at https://github.com/glebmikulko/anycable-go.
 
 Please, provide reproduction script (using [this template](https://github.com/anycable/anycable/blob/master/etc/bug_report_template.rb)) when submitting bugs if possible.
 

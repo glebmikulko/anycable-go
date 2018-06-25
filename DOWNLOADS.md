@@ -1,4 +1,4 @@
-**NOTE:** for new versions see [releases](https://github.com/anycable/anycable-go/releases).
+**NOTE:** for new versions see [releases](https://github.com/glebmikulko/anycable-go/releases).
 
 ## Version 0.4.2
 

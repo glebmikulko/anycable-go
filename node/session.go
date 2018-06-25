@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/anycable/anycable-go/utils"
+	"github.com/glebmikulko/anycable-go/utils"
 	"github.com/apex/log"
 	"github.com/gorilla/websocket"
 	nanoid "github.com/matoous/go-nanoid"

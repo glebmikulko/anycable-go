@@ -3,7 +3,7 @@ package node
 import (
 	"errors"
 
-	"github.com/anycable/anycable-go/metrics"
+	"github.com/glebmikulko/anycable-go/metrics"
 
 	"github.com/apex/log"
 )

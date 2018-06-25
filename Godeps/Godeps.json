@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/anycable/anycable-go",
+	"ImportPath": "github.com/glebmikulko/anycable-go",
 	"GoVersion": "go1.9",
 	"GodepVersion": "v79",
 	"Deps": [

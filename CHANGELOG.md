@@ -41,7 +41,7 @@ anycable-go --metrics_log_formatter="my-metrics-formatter.rb"
 
 ## 0.6.0-preview5
 
-- [Fixes [#34](https://github.com/anycable/anycable-go/issues/34)] Fix `panic` when trying to send to a closed channel. ([@palkan][])
+- [Fixes [#34](https://github.com/glebmikulko/anycable-go/issues/34)] Fix `panic` when trying to send to a closed channel. ([@palkan][])
 
 - Add `--metrics_host` option. ([@shedimon][])
 
@@ -121,19 +121,19 @@ Also, `json` format is supported out-of-the-box (`--log_format=json` or `ANYCABL
 
 Helps to identify connections in logs. Will be included into RPC calls in the future releases.
 
-- [Closes[#24](https://github.com/anycable/anycable-go/issues/24)] No more ping logs even in debug mode.
+- [Closes[#24](https://github.com/glebmikulko/anycable-go/issues/24)] No more ping logs even in debug mode.
 
 ## 0.5.4 (2018-02-08)
 
 - Automatically reconnect to Redis when connection is lost. ([@palkan][])
 
-Fixes [#25](https://github.com/anycable/anycable-go/issues/25).
+Fixes [#25](https://github.com/glebmikulko/anycable-go/issues/25).
 
 ## 0.5.3 (2017-12-22)
 
 - Fix bug with non-JSON messages. ([@palkan][])
 
-Fixes [#23](https://github.com/anycable/anycable-go/issues/23).
+Fixes [#23](https://github.com/glebmikulko/anycable-go/issues/23).
 
 ## 0.5.1 (2017-11-08)
 
@@ -169,7 +169,7 @@ By default equals "cookie".
 
 - Fixed bug with race conditions in hub. ([@palkan][])
 
-Fixed [#10](https://github.com/anycable/anycable-go/issues/10).
+Fixed [#10](https://github.com/glebmikulko/anycable-go/issues/10).
 
 ## 0.4.0 (2017-03-18)
 

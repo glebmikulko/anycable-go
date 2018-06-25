@@ -3,7 +3,7 @@
 package metrics
 
 import (
-	"github.com/anycable/anycable-go/mrb"
+	"github.com/glebmikulko/anycable-go/mrb"
 	"github.com/apex/log"
 	"github.com/mitchellh/go-mruby"
 )

@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/anycable/anycable-go/config"
+	"github.com/glebmikulko/anycable-go/config"
 	"github.com/namsral/flag"
 )
 

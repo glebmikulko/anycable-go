@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/anycable/anycable-go/node"
+	"github.com/glebmikulko/anycable-go/node"
 	"github.com/apex/log"
 	"github.com/gomodule/redigo/redis"
 )

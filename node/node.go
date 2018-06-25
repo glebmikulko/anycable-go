@@ -5,8 +5,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/anycable/anycable-go/config"
-	"github.com/anycable/anycable-go/metrics"
+	"github.com/glebmikulko/anycable-go/config"
+	"github.com/glebmikulko/anycable-go/metrics"
 	"github.com/apex/log"
 )
 
